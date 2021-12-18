@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+img {
+  width: 90%;
+  display: inline-block;
+  height: auto;
+}
+
+textarea {
+  padding: 0;
+  resize: none;
+  outline: none;
+}
+
+body {
+  background-color: #19181A;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.content-area {
+  width: 100%;
+  height: calc(100vh - 3rem);
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6px;
+}
+
+.editor {
+  width: 46%;
+  min-width: 600px;
+  height: 98%;
+  /* background-color: rgb(158, 103, 84); */
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.editor textarea {
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  border: none;
+
+}
+
+ textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  opacity: 0.5;
+}
+
+.editor textarea:first-child {
+  height: 8rem;
+  padding-top: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.3rem;
+}
+
+.editor textarea:last-child {
+  height: calc(100% -  6rem);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+}
+
+.preview {
+  width: 46%;
+  min-width: 600px;
+  height: 98%;
+  margin-left: 10px;
+
+  /* background-color: palegreen; */
+}
+
+
+
+.preview .markdown {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* style for markdown */
+blockquote {
+  background: rgb(89, 39, 233,0.1);
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+code {
+  background: rgb(107, 107, 107,0.5);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.editor-width {
+  width: 80%;
+}
